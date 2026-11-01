@@ -12,5 +12,10 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*",
+    "src-callback/**/*",
+    "src-promise/**/*",
+    "src-async/**/*"
+  ]
 }

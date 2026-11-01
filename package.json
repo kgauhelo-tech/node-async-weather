@@ -1,5 +1,5 @@
 {
-  "name": "shopping-lists-api",
+  "name": "node-async-weather-api",
   "version": "1.0.0",
   "description": "Topic: NodeTS <br />\r Submission Date: 30 October 2026 <br />\r Time: 09:00 AM",
   "main": "index.js",
@@ -11,15 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kgauhelo-tech/node-shopping-list-api.git"
+    "url": "git+https://github.com/kgauhelo-tech/node-async-weather.git"
   },
   "keywords": [],
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/kgauhelo-tech/node-shopping-list-api/issues"
+    "url": "https://github.com/kgauhelo-tech/node-async-weather.git/issues"
   },
-  "homepage": "https://github.com/kgauhelo-tech/node-shopping-list-api#readme",
+  "homepage": "https://github.com/kgauhelo-tech/node-async-weather.git#readme",
   "dependencies": {
+    "openmeteo": "^1.2.3",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
