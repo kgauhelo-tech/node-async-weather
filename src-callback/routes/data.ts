@@ -19,14 +19,22 @@ export const dataRoute = async (req: IncomingMessage, res: ServerResponse) => {
             "Missing or invalid latitude or longitude query parameters",
         }),
       );
+      return;
     }
 
-    const returnData = await fetchData({ latitude, longitude });
+    fetchData({ latitude, longitude }, (err, returnData) => {
+      if (err) {
+        res.writeHead(500, { "content-type": "application/json" });
+        res.end(JSON.stringify({ errorMessage: err.message }));
+        return;
+      }
 
-    res.writeHead(200, {
-      "content-type": "application/json",
+      // Success! Send the combined weather and headlines back to the client
+      res.writeHead(200, {
+        "content-type": "application/json",
+      });
+      res.end(JSON.stringify(returnData));
     });
-    res.end(JSON.stringify(returnData));
 
     return;
   }
