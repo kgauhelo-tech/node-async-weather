@@ -1,5 +1,3 @@
-import { article } from "../models/headlinesModel";
-
 export function fetchHeadlines(
   callback: (error: Error | null, headlines: string[]) => void,
 ) {

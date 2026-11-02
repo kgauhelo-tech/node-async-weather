@@ -1,12 +1,12 @@
 import http, { IncomingMessage, ServerResponse } from "http";
-// import { dataRoute } from "./routes/data";
+import { asyncRoute } from "./routes/async-routes";
 
 // TODO; Test the endpoint
 
 const PORT: number = 4000;
 const requestListener = (req: IncomingMessage, res: ServerResponse) => {
   if (req.url?.startsWith("/async")) {
-    // dataRoute(req, res);
+    asyncRoute(req, res);
   } else {
     res.writeHead(400, {
       "content-type": "application/json",

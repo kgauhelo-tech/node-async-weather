@@ -1,5 +1,4 @@
 import { IncomingMessage, ServerResponse } from "http";
-import { fetchHeadlines } from "../controllers/headlines";
 import { fetchData } from "../controllers/main-controller";
 
 // test using: http://localhost:4000/callback?lat=-28.1036&lon=26.8669

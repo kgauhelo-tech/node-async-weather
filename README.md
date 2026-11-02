@@ -42,7 +42,7 @@ Fetches the weather and headlines data and returns it in a JSON format.
    npm install
    ```
 
-## Running the Server
+## Running the Server server that uses callbacks
 
 Start the callback server on port 4000 by running:
 
@@ -50,7 +50,23 @@ Start the callback server on port 4000 by running:
 npm run callback
 ```
 
-The server will be available at `http://localhost:4000`.
+## Running the Server server that uses promises
+
+Start the callback server on port 4000 by running:
+
+```bash
+npm run promise
+```
+
+## Running the Server server that uses async/await
+
+Start the callback server on port 4000 by running:
+
+```bash
+npm run async
+```
+
+The servers will be available at `http://localhost:4000`.
 
 ## Testing
 
