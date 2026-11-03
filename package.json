@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "promise": "nodemon src-promise/server.ts",
-    "async": "nodemon src-async/server.ts",
-    "callback": "nodemon src-callback/server.ts"
+    "promise": "nodemon src-promise/promiseVersion.ts",
+    "async": "nodemon src-async/asyncVersion.ts",
+    "callback": "nodemon src-callback/callbackVersion.ts"
   },
   "repository": {
     "type": "git",
