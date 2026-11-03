@@ -74,7 +74,7 @@ Use Postman or a similar tool to test the API endpoints on a local device.
 
 ### Example for GET request:
 
-- URL: `http://localhost:4000/items`
+- URL: `http://localhost:4000/async?at=-28.1036&lon=26.8669`
 - Method: `GET`
 
 ## License
