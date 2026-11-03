@@ -2,7 +2,7 @@ import { IncomingMessage, ServerResponse } from "http";
 import { fetchData } from "../controllers/main-controller";
 
 // test using: http://localhost:4000/callback?lat=-28.1036&lon=26.8669
-// use this to get started with getting  `http://${req.headers.host}`
+// use this to get started with getting the latitude and longitude `http://${req.headers.host}`
 
 export const dataRoute = async (req: IncomingMessage, res: ServerResponse) => {
   if (req.url?.startsWith("/callback") && req.method === "GET") {

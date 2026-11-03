@@ -1,4 +1,3 @@
-import { error } from "console";
 import { coordinates } from "../models/weatherModel";
 import { fetchWeatherApi } from "openmeteo";
 

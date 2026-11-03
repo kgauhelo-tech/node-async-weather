@@ -5,7 +5,7 @@ import { fetchHeadlines } from "./headlines";
 export const fetchData = (
   coordinates: coordinates,
   callback: (
-    error: Error | null, // <--- Fixed: Added '| null' so you can pass null on success!
+    error: Error | null,
     results?: { weather: any; headlines: string[] },
   ) => void,
 ) => {
@@ -16,7 +16,6 @@ export const fetchData = (
   function checkCompletion() {
     if (errorOccurred) return;
 
-    // Once both slots have data, deliver the combined package via the callback
     if (weatherResult !== null && headlinesResult !== null) {
       callback(null, {
         weather: weatherResult,
@@ -25,7 +24,6 @@ export const fetchData = (
     }
   }
 
-  // 1. Fire weather fetch
   fetchWeather(coordinates, (error, weather) => {
     if (error) {
       errorOccurred = true;
@@ -36,7 +34,6 @@ export const fetchData = (
     checkCompletion();
   });
 
-  // 2. Fire headlines fetch concurrently
   fetchHeadlines((err, headlines) => {
     if (err) {
       errorOccurred = true;
