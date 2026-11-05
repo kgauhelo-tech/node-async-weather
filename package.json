@@ -1,0 +1,31 @@
+{
+  "name": "node-async-weather-api",
+  "version": "1.0.0",
+  "description": "Topic: NodeTS <br />\r Submission Date: 30 October 2026 <br />\r Time: 09:00 AM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "promise": "nodemon src-promise/promiseVersion.ts",
+    "async": "nodemon src-async/asyncVersion.ts",
+    "callback": "nodemon src-callback/callbackVersion.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgauhelo-tech/node-async-weather.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kgauhelo-tech/node-async-weather.git/issues"
+  },
+  "homepage": "https://github.com/kgauhelo-tech/node-async-weather.git#readme",
+  "dependencies": {
+    "openmeteo": "^1.2.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "nodemon": "^3.1.14",
+    "typescript": "^5.0.0"
+  }
+}
